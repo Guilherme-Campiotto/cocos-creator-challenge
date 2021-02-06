@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "0fc88a55-776b-46e5-8e5c-f75494bb2ee8",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "narwhal": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "c792dfa8-5643-4125-b096-c02fa0d3c997",
       "rawTextureUuid": "0fc88a55-776b-46e5-8e5c-f75494bb2ee8",
       "trimType": "auto",

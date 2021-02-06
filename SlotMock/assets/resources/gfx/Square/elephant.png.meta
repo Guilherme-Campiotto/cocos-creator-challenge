@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "d9d2fc74-f8ce-4a58-a8da-1b0670a2b65f",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "elephant": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "bb0d4765-6fdd-4eb3-a802-a26832e215ee",
       "rawTextureUuid": "d9d2fc74-f8ce-4a58-a8da-1b0670a2b65f",
       "trimType": "auto",

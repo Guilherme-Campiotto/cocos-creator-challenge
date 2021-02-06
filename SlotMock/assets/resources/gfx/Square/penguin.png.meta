@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "200e56c4-2695-4caf-9fc9-c27617e22d4c",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "penguin": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "d5ce4640-70fa-490f-a8b3-61c207a42cec",
       "rawTextureUuid": "200e56c4-2695-4caf-9fc9-c27617e22d4c",
       "trimType": "auto",

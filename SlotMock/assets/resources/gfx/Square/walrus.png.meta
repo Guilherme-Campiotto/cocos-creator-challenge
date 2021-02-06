@@ -1,12 +1,16 @@
 {
-  "ver": "1.0.0",
+  "ver": "2.3.3",
   "uuid": "9dda88ee-eaee-411c-9fcb-4826905443a0",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "walrus": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "3a646fc7-dfdf-4a9e-b940-582881319694",
       "rawTextureUuid": "9dda88ee-eaee-411c-9fcb-4826905443a0",
       "trimType": "auto",

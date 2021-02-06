@@ -45,18 +45,23 @@ export default class Reel extends cc.Component {
     }
   }
 
+  // In each tile of the rell is placed a random animal
   shuffle(): void {
     for (let i = 0; i < this.tiles.length; i += 1) {
       this.tiles[i].getComponent('Tile').setRandom();
     }
+
+    console.log("Size of tiles: " + this.tiles.length);
   }
 
+  // Prepare to stop the reel with the result, a match or a totally random result
   readyStop(newResult: Array<number>): void {
     const check = this.spinDirection === Aux.Direction.Down || newResult == null;
     this.result = check ? newResult : newResult.reverse();
     this.stopSpinning = true;
   }
 
+  // Change the elements of the reel while its still spining 
   changeCallback(element: cc.Node = null): void {
     const el = element;
     const dirModifier = this.spinDirection === Aux.Direction.Down ? -1 : 1;
@@ -86,6 +91,7 @@ export default class Reel extends cc.Component {
     }
   }
 
+  // Start spining with a delay, so each reel starts after the other
   doSpin(windUp: number): void {
     this.stopSpinning = false;
 
@@ -108,7 +114,9 @@ export default class Reel extends cc.Component {
   doSpinning(element: cc.Node = null, times = 1): void {
     const dirModifier = this.spinDirection === Aux.Direction.Down ? -1 : 1;
 
+    // Go 144 pixels up or down, depending on the direction of the reel
     const move = cc.tween().by(0.04, { position: cc.v2(0, 144 * dirModifier) });
+
     const doChange = cc.tween().call(() => this.changeCallback(element));
     const repeat = cc.tween(element).repeat(times, move.then(doChange));
     const checkEnd = cc.tween().call(() => this.checkEndCallback(element));
