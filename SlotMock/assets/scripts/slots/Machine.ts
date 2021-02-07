@@ -62,8 +62,7 @@ export default class Machine extends cc.Component {
     this.node.getComponent(cc.Widget).updateAlignment();
   }
 
-  // Spin the machine, with reels spining going up or down
-  // 
+  // Spin the machine, with reels spining up or down
   // Blocks user interaction untils all the reels stop
   spin(): void {
     this.spinning = true;
@@ -99,8 +98,6 @@ export default class Machine extends cc.Component {
     for (let i = 0; i < this.numberOfReels; i += 1) {
       const spinDelay = i < 2 + rngMod ? i / 4 : rngMod * (i - 2) + i / 4;
       const theReel = this.reels[i].getComponent('Reel');
-
-      //console.log(result[i]);
 
       setTimeout(() => {
         theReel.readyStop(result[i]);
