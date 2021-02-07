@@ -25,12 +25,12 @@ export default class Tile extends cc.Component {
     });
   }
 
-  // Place an sprite in the tile
+  // Places an sprite in the tile
   setTile(index: number): void {
     this.node.getComponent(cc.Sprite).spriteFrame = this.textures[index];
   }
 
-  // Chose a random sprite to show on tile
+  // Chooses a random sprite to show on tile
   setRandom(): void {
     const randomIndex = Math.floor(Math.random() * this.textures.length);
     this.setTile(randomIndex);

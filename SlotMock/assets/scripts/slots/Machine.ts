@@ -62,7 +62,7 @@ export default class Machine extends cc.Component {
     this.node.getComponent(cc.Widget).updateAlignment();
   }
 
-  // Spin the machine, with reels spining up or down
+  // Spin the machine, with reels spinning up or down
   // Blocks user interaction untils all the reels stop
   spin(): void {
     this.spinning = true;
@@ -86,7 +86,7 @@ export default class Machine extends cc.Component {
     this.button.getComponent(cc.Button).interactable = false;
   }
 
-  // Stop spining the machine
+  // Stop spinning the machine
   stop(result: Array<Array<number>> = null): void {
     setTimeout(() => {
       this.spinning = false;
